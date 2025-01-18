@@ -1,0 +1,197 @@
+.header-container {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo h1 {
+    font-size: 24px;
+    color: #ff4c4c;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+  }
+  
+  .profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .hamburger-menu {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .custom-line {
+  border: none;
+  height: 1px;
+  background: #dad4d4;
+  margin: 10px 0;
+}
+
+  .header-content {
+    text-align: center;
+    margin-top: 40px;
+  }
+  .buton{
+    border-radius: 20px;
+    display: inline-block;
+    padding:  5px 5px;;
+    border: 2px #ff4c4c solid ;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .new-feature {
+    border: 1px #ff4c4c solid ;
+    color: #ff4c4c;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    background-color: rgb(237, 241, 240);
+  }
+  
+  .dashboard-link {
+    color: #ff4c4c;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  
+  .header-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .header-description {
+    color:black;
+    font-family: Verdana;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .header-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .btn-demo, .btn-signup {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btn-demo {
+    background-color: #fff;
+    border: 2px solid #ff4c4c;
+    color: black;
+    border: 1px rgb(117, 114, 114) solid;
+  }
+  
+  .btn-signup {
+    background-color: #ff4c4c;
+    color: #fff;
+  }
+  
+  .header-image {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .front-img {
+    width: 100%;
+    max-width: 980px;
+    height: auto; 
+    border:6px solid black;
+    border-radius: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  
+    .hamburger-menu {
+      display: block;
+    }
+  
+    .header-title {
+      font-size: 28px;
+    }
+  
+    .header-description {
+      font-size: 14px;
+    }
+  
+    .header-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .front-img {
+        max-width: 100%;
+        height: auto;
+      }
+  }
+  
+  @media (max-width: 480px) {
+    .logo h1 {
+      font-size: 20px;
+    }
+  
+    .new-feature {
+      font-size: 12px;
+    }
+  
+    .dashboard-link {
+      font-size: 12px;
+    }
+  
+    .header-title {
+      font-size: 24px;
+    }
+  
+    .btn-demo, .btn-signup {
+      font-size: 14px;
+    }
+
+    .front-img {
+        width: 100%;
+        border-radius: 5px;
+      }
+  }
